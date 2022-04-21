@@ -103,7 +103,7 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
       child: RoundedFrame(
         height: widget.height,
         padding: const EdgeInsets.only(right: 10),
-        color: Color.fromARGB(69, 255, 255, 255),
+        color: Color.fromARGB(255, 255, 255, 255),
         borderRadius: BorderRadius.circular(20),
         elevation: 8.0,
         child: Row(
@@ -142,7 +142,7 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
               child: GestureDetector(
                 child: Icon(
                   Icons.clear,
-                  color: Color.fromARGB(144, 160, 160, 160),
+                  color: Color.fromARGB(255, 255, 255, 255),
                 ),
                 onTap: () {
                   clearText();
@@ -240,7 +240,7 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
 
   Widget _buildSearchingOverlay() {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
       child: Row(
         children: <Widget>[
           SizedBox(
@@ -252,7 +252,7 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
           Expanded(
             child: Text(
               widget.searchingText ?? "Searching...",
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 20),
             ),
           )
         ],
